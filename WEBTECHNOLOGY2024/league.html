@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League</title>
+</head>
+<!----niyonshuti jean pierre 2222003223 on 16th april 2024--->
+<body>
+    <h1>League</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="landingleague.php">
+        <label>league_id:</label><br>
+        <input type="text" name="league_id"><br>
+         <label>League_name:</label><br>
+        <input type="text" name=" league_name" required><br>
+        <label>Country:</label><br>
+        <input type="text" name="country" required><br>
+        <label>Season:</label><br>
+        <input type="text" name="season" required><br>
+        <label>Start_date:</label><br>
+        <input type="date" name="start_date" required><br>
+         <label>End_date:</label><br>
+          <input type="date" name="end_date" required><br>
+          <label>Number_club:</label><br>
+        <input type="text" name="number_club" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>League</h2>
+     <form method="post" action="landingleague.php">
+                    <input type="number" name="league_id" placeholder=" New league_id">
+                    <input type="text" name="newleague_name" placeholder="New league_name">
+                    <input type="text" name="newcountry" placeholder="New country">
+                    <input type="text" name="newseason" placeholder="New season">
+                    <input type="date" name="newstart_date" placeholder="New start_date">
+                    <input type="date" name="newend_date" placeholder="New end_date">
+                    <input type="text" name="newnumber_club" placeholder="New number_club">
+                    <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+</body>
+</html>
